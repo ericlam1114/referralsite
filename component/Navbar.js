@@ -3,8 +3,8 @@ import Link from "next/link";
 
 function Navbar() {
   return (
-    <div className="-px-4 flex -mb-14 justify-between -mt-4 items-center lg:py-2 lg:px-8 md:lg:-mb-56 md:lg:-mt-24">
-      <div className="mx-auto lg:-ml-24 mb-2  lg:mb-4 md:mb-0">
+    <div className="-px-4 flex -mb-14 justify-between -mt-12 items-center lg:py-2 lg:px-8 md:lg:-mb-56 md:lg:-mt-24">
+      <div className="mx-auto lg:-ml-24 -mb-8  lg:mb-4 md:mb-0">
         <Link href="/">
           <img
             src="/explodingideaslogo.png"
