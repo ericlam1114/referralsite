@@ -9,7 +9,7 @@ const Footer = () => {
           Privacy Policy
         </Link>
         <Link href="/terms" className="underline">
-          Terms of Use
+          Terms
         </Link>
         <a href="https://explodingideas.beehiiv.com/upgrade" target="_blank" className="underline">
           Pro
@@ -17,7 +17,9 @@ const Footer = () => {
         <Link href="/sponsor" className="underline">
           Sponsor 
         </Link>
-        
+        <a href="https://explodingideas.beehiiv.com/login" target="_blank" className="underline md:hidden">
+          Login 
+        </a>
       </div>
       {/* <div className="text-sm pt-2">
       Copyright © 2023 Explodingideas.co
