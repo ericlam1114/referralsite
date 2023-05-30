@@ -49,16 +49,16 @@ const Hero = () => {
     }
   };
   return (
-    <div className="container mx-auto md:lg:h-screen flex flex-col md:flex-row justify-between items-center ">
+    <div className="container px-2 md:mx-auto md:lg:mx-auto md:lg:h-screen flex flex-col md:flex-row justify-between items-center ">
       {/* {showPopup && <Popup onClose={() => setShowPopup(false)} />} */}
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-5 ">
         <p className="text-md md:lg:text-lg font-medium bg-yellow-100 text-yellow-700 uppercase px-3 flex justify-center rounded-3xl py-2 w-48">
           Newsletter
         </p>
-        <p className="text-5xl font-bold sm:w-full md:lg:w-4/6 md:lg:text-6xl">
+        <p className="text-5xl font-bold sm:w-full md:w-3/6 lg:w-3/6 md:lg:text-6xl">
           Startup Ideas, Sent Weekly{" "}
         </p>
-        <p className="text-base md:lg:w-1/2">
+        <p className="text-base md:lg:w-2/5 ">
           Join 1,000+ elite entrepreneurs getting curated startup ideas in
           million dollar niches. Launch your empire this weekend.
         </p>
@@ -75,7 +75,7 @@ const Hero = () => {
 
             <button
               // onClick={handleClick}
-              className="px-6 py-3 bg-gradient-to-r from-[#181918] to-[#262927] rounded-2xl hover:scale-95 duration-300 transition text-white shadow-xl font-medium"
+              className="px-6 py-3 bg-gradient-to-r from-[#181918] to-[#262927] rounded-lg hover:scale-95 duration-300 transition text-white shadow-xl font-medium"
             >
               Subscribe{" "}
             </button>
@@ -86,10 +86,10 @@ const Hero = () => {
             Read by ex-employees from
           </p>
           <img
-            src="/startupswhoread.png"
-            className="max-w-sm lg:max-w-sm -pt-2 opacity-60 "
-            alt=""
-          />
+          src="/startupswhoread.png"
+          className="max-w-full lg:max-w-sm -pt-2 opacity-60 "
+          alt="startups that read explodingideas"
+        />
         </div>
         {/* <div className="flex gap-5"> */}
         {/* <BsTwitter className="text-4xl rounded-xl text-cyan-700 bg-cyan-100 px-2 py-2 hover:scale-95 duration-300 transition cursor-pointer" /> */}
@@ -97,7 +97,7 @@ const Hero = () => {
         {/* <BsYoutube className="text-4xl rounded-xl text-cyan-700 bg-cyan-100 px-2 py-2 hover:scale-95 duration-300 transition cursor-pointer"/> */}
         {/* </div> */}
       </div>
-      <img src="/startupideas.png" className="w-3/5 lg:max-w-sm" alt="" />
+      <img src="/startupideas.png" className="max-w-full md:w-3/5 lg:max-w-sm" alt="mascot" />
     </div>
   );
 };

@@ -23,6 +23,19 @@ module.exports = {
       bebasneo: ['Bebas Neue', 'cursive'],
     },
     extend: {
+      keyframes: {
+        'slide-in-bottom': {
+          '0%': { transform: 'translateY(100%)' },
+          '100%': { transform: 'translateY(0)' },
+        },
+        backgroundImage: theme=> ({
+          'holographic': 'linear-gradient(45deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%)',
+        })
+      },
+      animation: {
+        'slide-in-bottom': 'slide-in-bottom 0.5s ease-out',
+        
+      },
       boxShadow: {
         "3xl": "-1px 34px 47px -29px rgb(32 32 32 / 100%)",
         "4xl": " 0vw 0vw 0.5vw 0vw rgb(32 32 32 / 20%)",
@@ -32,7 +45,6 @@ module.exports = {
         "card-shadow": "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
         "dark-shadow": "10px 10px 5px 0px rgba(130,130,130,0.75)"
       },
-
       colors: {
         bg: {
           DEFAULT: "#202020",
