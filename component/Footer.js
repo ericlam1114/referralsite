@@ -12,7 +12,7 @@ const Footer = () => {
           Terms
         </Link>
         <a href="https://explodingideas.beehiiv.com/upgrade" target="_blank" className="underline">
-          Pro
+          Upgrade
         </a>
         <Link href="/sponsor" className="underline">
           Sponsor 

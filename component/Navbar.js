@@ -13,7 +13,7 @@ function Navbar() {
           />
         </Link>
       </div>
-      <div className="w-1/2 hidden lg:flex md:w-auto text-right -mt-14 mr-4 ">
+      <div className="w-1/2 hidden md:lg:flex md:w-auto text-right -mt-14 mr-4 ">
         <a
           target="_blank" href="https://explodingideas.beehiiv.com/login"
           className="px-5  py-3 bg-amber-400 rounded-lg hover:scale-95 duration-300 transition text-black shadow-sm font-medium"
