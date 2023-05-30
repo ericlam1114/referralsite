@@ -16,7 +16,7 @@ function Navbar() {
         target="_blank" href="https://explodingideas.beehiiv.com/login"
         className="px-5 py-3 bg-amber-400 rounded-lg hover:scale-95 duration-300 transition text-black shadow-sm font-medium"
       >
-          Sign Ins
+          Sign In
         </a>
       </div>
     </div>
