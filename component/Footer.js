@@ -6,17 +6,18 @@ const Footer = () => {
     <footer className="flex flex-col items-center py-4 ">
       <div className="flex space-x-4">
         <Link href="/privacy" className="underline">
-          Privacy Policy
-        </Link>
-        <Link href="/terms" className="underline">
+          Policy
+        </Link><div>|</div>
+        {/* <Link href="/terms" className="underline">
           Terms
-        </Link>
+        </Link> */}
+        {/* <div>|</div> */}
         <a href="https://explodingideas.beehiiv.com/upgrade" target="_blank" className="underline">
           Upgrade
-        </a>
+        </a><div>|</div>
         <Link href="/sponsor" className="underline">
           Sponsor 
-        </Link>
+        </Link><div className="md:hidden">|</div>
         <a href="https://explodingideas.beehiiv.com/login" target="_blank" className="underline md:hidden">
           Login 
         </a>
