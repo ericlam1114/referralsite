@@ -21,9 +21,9 @@ const SponsorshipComponent = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 text-left text-black gap-y-4 sm:gap-y-0">
               <div>
                 Subscribers<br/>
-                <span className="text-black">5,000</span><br/>
+                <span className="text-black">5,182</span><br/>
                 Click Through Rate<br/>
-                <span className="text-black">6.81%%</span><br/>
+                <span className="text-black">15.14%%</span><br/>
                 Readers Profile<br/>
                 <span className="text-black lg:pr-12">Entrepreneurs, business owners, side-hustlers</span>
               </div>
