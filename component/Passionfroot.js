@@ -23,7 +23,7 @@ const SponsorshipComponent = () => {
                 Subscribers<br/>
                 <span className="text-black">5,182</span><br/>
                 Click Through Rate<br/>
-                <span className="text-black">15.14%%</span><br/>
+                <span className="text-black">15.14%</span><br/>
                 Readers Profile<br/>
                 <span className="text-black lg:pr-12">Entrepreneurs, business owners, side-hustlers</span>
               </div>
