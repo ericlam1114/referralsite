@@ -50,7 +50,7 @@ const Hero = () => {
 
       console.log(response);
       setEmail("");
-      router.push("/congratulations");
+      // router.push("/congratulations");
     } catch (err) {
       console.error(err);
       alert("Error subscribing. Please try again later.");

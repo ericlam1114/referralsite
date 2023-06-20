@@ -3,7 +3,7 @@ import axios from 'axios';
 const apiToken = process.env.NEXT_PUBLIC_BEEHIIV_API_KEY;
 
 const handler = async (req, res) => {
-    console.log("API Key: ", apiToken); // Add this line to log the API token
+    // console.log("API Key: ", apiToken); // Add this line to log the API token
   
     if (req.method === 'POST') {
       try {
