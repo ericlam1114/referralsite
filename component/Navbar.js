@@ -15,7 +15,7 @@ function Navbar() {
       </div>
       <div className="w-1/2 hidden md:lg:flex md:w-auto text-right -mt-14 mr-4 ">
         <a
-          target="_blank" href="https://explodingideas.beehiiv.com/login"
+         href="https://pro.explodingideas.co"
           className="px-5  py-3 bg-amber-400 rounded-lg hover:scale-95 duration-300 transition text-black shadow-sm font-medium"
         >
             Sign In
