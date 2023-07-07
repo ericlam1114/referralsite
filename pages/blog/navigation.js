@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import {sanityClient} from '../../sanity'
 import Navbar from '../../component/Navbarblog'
 import BlogheroNav from '../../component/Blogheronav'
+import Head from 'next/head';
 
 import Blogsectionnavigation from '../../component/Blognavigation'
 import Footertwo from '../../component/Footertwo'

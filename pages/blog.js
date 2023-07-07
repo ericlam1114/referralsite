@@ -5,6 +5,7 @@ import Bloghero from '../component/Bloghero'
 import Blogsection from '../component/Blogsection'
 import Footertwo from '../component/Footertwo'
 import Newsletterinput from '../component/Newsletterinput'
+import Head from 'next/head';
 
 const Blog = () => {
   const [posts, setPosts] = useState(null)
