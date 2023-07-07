@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+    .headerLi {
+      @apply text-primaryColor cursor-pointer duration-300;
+    }
+  }
+  
+  /* .banner-background {
+    background-image: url(/images/landscape.png);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+  } */
+  @layer components {
+    .my-p-class {
+      @apply mb-8;
+    }
+    .my-h1-class {
+      @apply text-3xl font-bold my-5;
+    }
+    .my-h2-class {
+      @apply text-3xl  my-5;
+    }
+    .my-h3-class {
+      @apply text-2xl my-5;
+    }
+    .my-li-class {
+      @apply ml-4 list-disc;
+    }
+    .my-link-class {
+      @apply text-blue-500 hover:underline;
+    }
+    .my-image-class {
+        @apply mb-5;
+      }
+      
+    
+    
+  }
+  
+  
+  :not(.my-p-class) + .my-p-class {
+    margin-top: 1em;  /* or whatever space you want */
+  }

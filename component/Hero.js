@@ -67,7 +67,7 @@ const Hero = () => {
           Startup Ideas, Sent Weekly{" "}
         </p>
         <p className="text-base md:lg:w-2/5 ">
-          Join 1,000+ elite entrepreneurs getting curated startup ideas in
+          Join 6,000+ elite entrepreneurs getting curated startup ideas in
           million dollar niches. Launch your empire this weekend.
         </p>
 

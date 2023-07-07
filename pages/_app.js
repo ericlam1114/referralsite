@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 // import * as fbq from "../lib/fpixel";
 import { motion } from 'framer-motion';
 
+
 function MyApp({ Component, pageProps, router }) {
   
   return (

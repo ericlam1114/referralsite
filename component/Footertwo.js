@@ -22,7 +22,7 @@ const Footer = () => {
         </Link> */}
       
       </div>
-      <div className="flex flex-col space-y-2 items-start md:items-center">
+      <div className="flex flex-col space-y-2 items-start md:items-start">
         <div className="font-bold text-xl">About Us</div>
         <Link href="/privacy" className="text-sm">
           Privacy Policy
@@ -30,8 +30,11 @@ const Footer = () => {
         <Link href="/terms" className="text-sm">
           Terms of Use
         </Link>
+        <Link href="/blog/navigation" className="text-sm">
+          Blog
+        </Link>
       </div>
-      <div className="flex flex-col space-y-2 items-start md:items-center">
+      <div className="flex flex-col space-y-2 items-start md:items-start">
         <div className="font-bold text-xl">Useful Links</div>
         <div className="text-sm">
           ideas@explodingideas.co
