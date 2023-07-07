@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Footer from "../component/Footer";
+import Footer from "../component/Footertwo";
 import { useRouter } from "next/router";
 import Navbar from "../component/Navbar";
 
