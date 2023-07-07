@@ -22,7 +22,7 @@ const Blog = () => {
     <div>
          <Head>
    
-   <title>Find New Ideas</title>
+   <title>Find Your Exploding Idea</title>
    <meta name="title" content="Startup Ideas, Sent Weekly"/>
    <meta name="description" content="Join 6,000+ elite entrepreneurs getting curated startup ideas in million dollar niches."/>
    

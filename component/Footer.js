@@ -18,7 +18,7 @@ const Footer = () => {
         <Link href="/sponsor" className="underline">
           Sponsor 
         </Link><div className="md:hidden">|</div>
-        <a href="https://explodingideas.beehiiv.com/login" target="_blank" className="underline md:hidden">
+        <a href="https://pro.explodingideas.co/login" className="underline md:hidden">
           Login 
         </a>
       </div>
