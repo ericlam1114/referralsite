@@ -55,7 +55,7 @@ const Post = ({ post }: PostType) => {
       
       <Head>
        
-       <title>Exploding Ideas Blog</title>
+       <title>{post.title}</title>
        <meta name="title" content={post.title}/>
        <meta name="description" content={post.description}/>
        
@@ -77,7 +77,7 @@ const Post = ({ post }: PostType) => {
              
 
       </Head>
-      <Header />
+      {/* <Header /> */}
 
       {/*main image*/}
       {/* <img
