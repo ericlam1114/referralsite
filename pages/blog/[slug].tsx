@@ -11,6 +11,7 @@ import PortableText from "react-portable-text";
 import { useForm, SubmitHandler } from "react-hook-form";
 import Navbarblog from '../../component/Navbarblog'
 import Image from 'next/image';
+import BlockImage from '../../component/Blockimage';
 
 
 
@@ -117,6 +118,9 @@ const Post = ({ post }: PostType) => {
     projectId={process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || "hox55ajl"}
     content={post.body}
     serializers={{
+      types: {
+        Image: BlockImage, 
+      },
       
      
       
@@ -186,19 +190,23 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const query = `*[_type == "post" && slug.current == $slug][0]{
-            _id,
-            publishedAt,
-            title,
-            author ->{
-                name,
-                image,
-            },
-            "comments":*[_type == "comment" && post._ref == ^._id && approved == true],
-            description,
-            mainImage,
-            slug,
-            body
-        }`;
+    _id,
+    publishedAt,
+    title,
+    author ->{
+        name,
+        image,
+    },
+    "comments":*[_type == "comment" && post._ref == ^._id && approved == true],
+    description,
+    mainImage,
+    slug,
+    body[]{
+      ...,
+      asset->,
+      alt
+    }
+}`;
 
   const post = await sanityClient.fetch(query, { slug: params?.slug });
 
