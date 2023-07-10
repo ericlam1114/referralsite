@@ -61,17 +61,17 @@ const Post = ({ post }: PostType) => {
        
        
        <meta property="og:type" content="website"/>
-       <meta property="og:url" content="https://www.explodingideas.co/"/>
+       <meta property="og:url" content={`https://explodingideas.co/blog/${post.slug.current}`}/>
        <meta property="og:title" content={post.title}/>
        <meta property="og:description" content={post.description}/>
-       <meta property="og:image" content="https://i.postimg.cc/bNrMHZLh/Exploding-Ideas-copy.png"/>
+       <meta property="og:image" content={urlFor(post.mainImage).url()}/>
        
        
        <meta property="twitter:card" content="summary_large_image"/>
-       <meta property="twitter:url" content="https://www.explodingideas.co/"/>
+       <meta property="twitter:url" content={`https://explodingideas.co/blog/${post.slug.current}`}/>
        <meta property="twitter:title" content={post.title}/>
-       <meta property="twitter:description" content="Join 6,000+ elite entrepreneurs getting curated startup ideas in million dollar niches."/>
-       <meta property="twitter:image" content="https://i.postimg.cc/bNrMHZLh/Exploding-Ideas-copy.png"/>
+       <meta property="twitter:description" content={post.description}/>
+       <meta property="twitter:image" content={urlFor(post.mainImage).url()}/>
        
               <link rel="icon" href="/favicon.ico" />
              
