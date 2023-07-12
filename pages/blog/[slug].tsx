@@ -9,12 +9,14 @@ import { sanityClient, urlFor } from "../../sanity";
 import { Post } from "../../typings";
 import PortableText from "react-portable-text";
 import { useForm, SubmitHandler } from "react-hook-form";
-import Navbarblog from '../../component/Navbarblog'
-import Image from 'next/image';
-import BlockImage from '../../component/Blockimage';
+import Navbarblog from "../../component/Navbarblog";
+import Image from "next/image";
+import BlockImage from "../../component/Blockimage";
 
-
-
+export interface FAQ {
+  question: string;
+  answer: string;
+}
 
 interface PostType {
   post: Post;
@@ -25,6 +27,7 @@ type Inputs = {
   name: string;
   email: string;
   comment: string;
+  faqs?: FAQ[]; // add this line
 };
 
 const Post = ({ post }: PostType) => {
@@ -52,30 +55,46 @@ const Post = ({ post }: PostType) => {
 
   return (
     <div>
-      
       <Head>
-       
-       <title>{post.title}</title>
-       <meta name="title" content={post.title}/>
-       <meta name="description" content={post.description}/>
-       
-       
-       <meta property="og:type" content="website"/>
-       <meta property="og:url" content={`https://explodingideas.co/blog/${post.slug.current}`}/>
-       <meta property="og:title" content={post.title}/>
-       <meta property="og:description" content={post.description}/>
-       <meta property="og:image" content={urlFor(post.mainImage).url()}/>
-       
-       
-       <meta property="twitter:card" content="summary_large_image"/>
-       <meta property="twitter:url" content={`https://explodingideas.co/blog/${post.slug.current}`}/>
-       <meta property="twitter:title" content={post.title}/>
-       <meta property="twitter:description" content={post.description}/>
-       <meta property="twitter:image" content={urlFor(post.mainImage).url()}/>
-       
-              <link rel="icon" href="/favicon.ico" />
-             
+        <title>{post.title}</title>
+        <meta name="title" content={post.title} />
+        <meta name="description" content={post.description} />
 
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content={`https://explodingideas.co/blog/${post.slug.current}`}
+        />
+        <meta property="og:title" content={post.title} />
+        <meta property="og:description" content={post.description} />
+        <meta property="og:image" content={urlFor(post.mainImage).url()} />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:url"
+          content={`https://explodingideas.co/blog/${post.slug.current}`}
+        />
+        <meta property="twitter:title" content={post.title} />
+        <meta property="twitter:description" content={post.description} />
+        <meta property="twitter:image" content={urlFor(post.mainImage).url()} />
+
+        <link rel="icon" href="/favicon.ico" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: post.faqs
+              ? post.faqs.map((faq) => ({
+                  "@type": "Question",
+                  name: faq.question,
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: faq.answer,
+                  },
+                }))
+              : [],
+          })}
+        </script>
       </Head>
       {/* <Header /> */}
 
@@ -105,7 +124,12 @@ const Post = ({ post }: PostType) => {
               <p className="font-bodyFont text-base">
                 by{" "}
                 <span className="font-bold text-secondaryColor">
-                  <a href="https://www.twitter.com/ericlamideas" target="_blank">{post.author.name}</a>
+                  <a
+                    href="https://www.twitter.com/ericlamideas"
+                    target="_blank"
+                  >
+                    {post.author.name}
+                  </a>
                 </span>{" "}
                 - Published {new Date(post.publishedAt).toLocaleDateString()}
               </p>
@@ -113,52 +137,61 @@ const Post = ({ post }: PostType) => {
           </h2>
 
           <div className="mt-10 ">
-          <PortableText
-    dataset={process.env.NEXT_PUBLIC_SANITY_DATASET || "production"}
-    projectId={process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || "hox55ajl"}
-    content={post.body}
-    serializers={{
-      types: {
-        Image: BlockImage, 
-      },
-      
-     
-      
-      
-      h1: (props: any) => <h1 className=" my-h1-class " {...props} />,
-      h2: (props: any) => <h2 className="my-h2-class" {...props} />,
-      h3: (props: any) => <h3 className="my-h3-class" {...props} />,
-      li: ({ children }: any) => (
-        <li className="my-li-class">{children}</li>
-      ),
-      link: ({ href, children }: any) => (
-        <a href={href} className="my-link-class" target="_blank">
-          {children}
-        </a>
-      ),
-      normal: ({ children }: any) => (
-        <p className="my-p-class mt-4 ">{children}</p> // add margin-top
-      ),
-    }}
-  />
+            <PortableText
+              dataset={process.env.NEXT_PUBLIC_SANITY_DATASET || "production"}
+              projectId={
+                process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || "hox55ajl"
+              }
+              content={post.body}
+              serializers={{
+                types: {
+                  Image: BlockImage,
+                },
+
+                h1: (props: any) => <h1 className=" my-h1-class " {...props} />,
+                h2: (props: any) => <h2 className="my-h2-class" {...props} />,
+                h3: (props: any) => <h3 className="my-h3-class" {...props} />,
+                li: ({ children }: any) => (
+                  <li className="my-li-class">{children}</li>
+                ),
+                link: ({ href, children }: any) => (
+                  <a href={href} className="my-link-class" target="_blank">
+                    {children}
+                  </a>
+                ),
+                normal: ({ children }: any) => (
+                  <p className="my-p-class mt-4 ">{children}</p> // add margin-top
+                ),
+              }}
+            />
           </div>
         </article>
 
         <hr className="max-w-lg my-5 mx-auto border[1px] border-secondaryColor" />
-       
       </div>
-        
+      {/* {post.faqs &&
+        post.faqs.map((faq, index) => (
+          <div key={index}>
+            <h2>{faq.question}</h2>
+            <p>{faq.answer}</p>
+          </div>
+        ))} */}
       <div className="max-w-4xl mx-auto">
-      <iframe
-        src="https://embeds.beehiiv.com/ca8d336e-c1b8-45ff-a785-6601b20540a9"
-        data-test-id="beehiiv-embed"
-        width="100%"
-        height="320"
-        frameBorder="0"
-        scrolling="no"
-        style={{borderRadius: '5px', border: '2px solid #e5e7eb', margin: '0', backgroundColor: 'transparent'}}
-      />
-    </div>
+        <iframe
+          src="https://embeds.beehiiv.com/ca8d336e-c1b8-45ff-a785-6601b20540a9"
+          data-test-id="beehiiv-embed"
+          width="100%"
+          height="320"
+          frameBorder="0"
+          scrolling="no"
+          style={{
+            borderRadius: "5px",
+            border: "2px solid #e5e7eb",
+            margin: "0",
+            backgroundColor: "transparent",
+          }}
+        />
+      </div>
       <Footer />
     </div>
   );
@@ -205,6 +238,10 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       ...,
       asset->,
       alt
+    },
+    "faqs": faqs[]->{  // add this line to include FAQ in the fetched data
+      question,
+      answer
     }
 }`;
 

@@ -4,6 +4,7 @@ export interface Category {
 }
 
 export interface Post {
+  faqs: any;
   _id: string;
   publishedAt: string;
   title: string;
