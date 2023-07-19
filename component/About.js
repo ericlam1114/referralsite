@@ -15,7 +15,7 @@ const About = () => {
         />
       </div>
       <p className="md:w-6/12 text-lg">
-        We are a group of passionate jewelers dedicated to delivering the finest quality permanent jewelry. Our mission is to help people express their unique personality and style through our beautiful, durable, and meaningful jewelry pieces. We believe that jewelry is not just an accessory but a symbol of one's individuality and personal story.
+        We're dedicated to delivering the finest quality permanent jewelry. Our mission is to help people express their unique personality and style through our beautiful, durable, and meaningful jewelry pieces. We believe that jewelry is not just an accessory but a symbol of one's individuality and personal story.
       </p>
     </div>
   );
