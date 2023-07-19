@@ -11,7 +11,7 @@ export default function Terms() {
       <Navbar></Navbar>
       <div className="flex flex-col items-center justify-center min-h-screen py-2">
         <Head>
-          <title>Terms of Service | Exploding Ideas</title>
+          <title>Terms of Service | Olivia Weld</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
@@ -52,7 +52,7 @@ export default function Terms() {
 
 <li>Third-party Social Media Service means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.</li>
 
-<li>Website refers to explodingideas.co, accessible from https://explodingideas.co/</li>
+<li>Website refers to oliviaweld.com, accessible from https://oliviaweld.com/</li>
 
 <li>You means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</li>
 </ul>
@@ -155,7 +155,7 @@ By continuing to access or use Our Service after those revisions become effectiv
             <p className="mt-2 mb-6">
             If you have any questions about these Terms and Conditions, You can contact us:
 <ul>
-<li>By email: ideas@explodingideas.co</li>
+<li>By email: olivia@oliviaweld.com</li>
 </ul>
   
             </p>
@@ -170,7 +170,7 @@ By continuing to access or use Our Service after those revisions become effectiv
             target="_blank"
             rel="noopener noreferrer"
           >
-            ©2023 Exploding Ideas
+            ©2023 Olivia Weld
           </a>
         </footer>
       </div>

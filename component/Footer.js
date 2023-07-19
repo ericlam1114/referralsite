@@ -12,15 +12,14 @@ const Footer = () => {
           Terms
         </Link> */}
         {/* <div>|</div> */}
-        <a href="https://explodingideas.beehiiv.com/upgrade" target="_blank" className="underline">
+        {/* <a href="https://explodingideas.beehiiv.com/upgrade" target="_blank" className="underline">
           Upgrade
-        </a><div>|</div>
-        <Link href="/sponsor" className="underline">
-          Sponsor 
+        </a> */}
+        {/* <div>|</div> */}
+        <Link href="/blog" className="underline">
+          Blog 
         </Link><div className="md:hidden">|</div>
-        <a href="https://pro.explodingideas.co/login" className="underline md:hidden">
-          Login 
-        </a>
+       
       </div>
       {/* <div className="text-sm pt-2">
       Copyright © 2023 Explodingideas.co

@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { sanityClient } from "../sanity";
-import Navbar from "../component/Navbarblog";
+import Navbar from "../component/Navbar";
 import Bloghero from "../component/Bloghero";
 import Blogsection from "../component/Blogsection";
-import Footertwo from "../component/Footertwo";
+import Footertwo from "../component/Footer";
 import Newsletterinput from "../component/Newsletterinput";
 import Head from "next/head";
 
@@ -20,41 +20,30 @@ const Blog = () => {
   return (
     <div>
       <Head>
-        <title>Exploding Ideas Blog</title>
-        <meta name="title" content="Startup Ideas, Sent Weekly" />
-        <meta
-          name="description"
-          content="Join 6,000+ elite entrepreneurs getting curated startup ideas in million dollar niches."
-        />
+        
+<title>Permanent Jewelry Blog - Olivia Weld</title>
+<meta name="title" content="Permanent Jewelry Blog"/>
+<meta name="description" content="Join 6,000+ elite entrepreneurs getting curated startup ideas in million dollar niches."/>
 
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.explodingideas.co/" />
-        <meta property="og:title" content="Startup Ideas, Sent Weekly" />
-        <meta
-          property="og:description"
-          content="Join 6,000+ elite entrepreneurs getting curated startup ideas in million dollar niches."
-        />
-        <meta
-          property="og:image"
-          content="https://i.postimg.cc/bNrMHZLh/Exploding-Ideas-copy.png"
-        />
 
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://www.explodingideas.co/" />
-        <meta property="twitter:title" content="Startup Ideas, Sent Weekly" />
-        <meta
-          property="twitter:description"
-          content="Join 6,000+ elite entrepreneurs getting curated startup ideas in million dollar niches."
-        />
-        <meta
-          property="twitter:image"
-          content="https://i.postimg.cc/bNrMHZLh/Exploding-Ideas-copy.png"
-        />
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://www.explodingideas.co/"/>
+<meta property="og:title" content="Permanent Jewelry Blog"/>
+<meta property="og:description" content="Join 6,000+ elite entrepreneurs getting curated startup ideas in million dollar niches."/>
+<meta property="og:image" content="https://i.postimg.cc/bNrMHZLh/Exploding-Ideas-copy.png"/>
+
+
+<meta property="twitter:card" content="summary_large_image"/>
+<meta property="twitter:url" content="https://www.explodingideas.co/"/>
+<meta property="twitter:title" content="Permanent Jewelry Blog"/>
+<meta property="twitter:description" content="Join 6,000+ elite entrepreneurs getting curated startup ideas in million dollar niches."/>
+<meta property="twitter:image" content="https://i.postimg.cc/bNrMHZLh/Exploding-Ideas-copy.png"/>
+
       </Head>
       <Navbar></Navbar>
       <Bloghero></Bloghero>
       <Blogsection></Blogsection>
-      <Newsletterinput></Newsletterinput>
+      {/* <Newsletterinput></Newsletterinput> */}
       <Footertwo></Footertwo>
       {/* Render your posts here */}
     </div>

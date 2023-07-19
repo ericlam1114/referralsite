@@ -11,7 +11,7 @@ export default function PrivacyPolicy() {
       <Navbar></Navbar>
       <div className="flex flex-col items-center justify-center min-h-screen py-2">
         <Head>
-          <title>Privacy Policy | Exploding Ideas</title>
+          <title>Privacy Policy | Olivia Weld</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
@@ -80,7 +80,7 @@ Like many sites, we use "cookies" to collect information. You can instruct your 
             target="_blank"
             rel="noopener noreferrer"
           >
-            ©2023 Exploding Ideas
+            ©2023 Olivia Weld
           </a>
         </footer>
       </div>

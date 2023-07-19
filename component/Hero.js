@@ -56,56 +56,27 @@ const Hero = () => {
       alert("Error subscribing. Please try again later.");
     }
   };
+
   return (
-    <div className="container px-2 md:mx-auto md:lg:mx-auto md:lg:h-screen flex flex-col md:flex-row justify-between items-center ">
-      {/* {showPopup && <Popup onClose={() => setShowPopup(false)} />} */}
-      <div className="flex flex-col gap-5 ">
-        <p className="text-md md:lg:text-lg font-medium bg-yellow-100 text-yellow-700 uppercase px-3 flex justify-center rounded-3xl py-2 w-48">
-          Newsletter
+    <div className="relative w-full mt-36  h-screen">
+      <div className="absolute inset-0 bg-center bg-cover hue-rotate-45 contrast-50 filter blur-sm" style={{backgroundImage: "url('/bannertwo.png')"}}></div>
+      <div className="relative flex  flex-col items-center px-2 md:lg:px-0 justify-center h-full text-center">
+        <h1 className="text-5xl font-bold pb-8 md:lg:pb-4  text-sky-900 bg-pink-100 rounded-t-lg rounded-b-none border md:lg:rounded-lg sm:w-full md:w-3/6 lg:w-3/6 md:lg:text-6xl">
+          Permanent Jewelry Kit{" "}
+        </h1>
+        <p className="text-base  text-sky-900 bg-pink-100 rounded-b-lg rounded-t-none border  md:lg:w-2/5 ">
+          Start your own permanent jewelry business with ease - we provide the tools, supplies, and step-by-step guides you need. Dive into the sparkling world of jewelry making today!
         </p>
-        <p className="text-5xl font-bold sm:w-full md:w-3/6 lg:w-3/6 md:lg:text-6xl">
-          Startup Ideas, Sent Weekly{" "}
-        </p>
-        <p className="text-base md:lg:w-2/5 ">
-          Join 6,000+ elite entrepreneurs getting curated startup ideas in
-          million dollar niches. Launch your empire this weekend.
-        </p>
-
-        <form onSubmit={handleSubmit}>
-          <div className="flex gap-5">
-            <input
-              placeholder="Enter your email..."
-              type="email"
-              value={email}
-              onChange={handleInputChange}
-              className="border border-gray-200 rounded-xl focus:outline-none focus:shadow-xl shadow-sm px-4"
-            />
-
-            <button
-              // onClick={handleClick}
-              className="px-6 py-3 bg-gradient-to-r from-[#181918] to-[#262927] rounded-lg hover:scale-95 duration-300 transition text-white shadow-xl font-medium"
-            >
-              Subscribe{" "}
-            </button>
-          </div>
-        </form>
-        <div className="">
-          <p className="body-md  pt-4 -mb-4 lg:body-lg text-center md:text-left opacity-60 md:lg:-mb-6">
-            Read by ex-employees from
-          </p>
-          <img
-          src="/startupswhoread.png"
-          className="max-w-full lg:max-w-sm -pt-2 opacity-60 "
-          alt="startups that read explodingideas"
-        />
-        </div>
-        {/* <div className="flex gap-5"> */}
-        {/* <BsTwitter className="text-4xl rounded-xl text-cyan-700 bg-cyan-100 px-2 py-2 hover:scale-95 duration-300 transition cursor-pointer" /> */}
-        {/* <RiInstagramFill className="text-4xl rounded-xl text-cyan-700 bg-cyan-100 px-2 py-2 hover:scale-95 duration-300 transition cursor-pointer"/> */}
-        {/* <BsYoutube className="text-4xl rounded-xl text-cyan-700 bg-cyan-100 px-2 py-2 hover:scale-95 duration-300 transition cursor-pointer"/> */}
-        {/* </div> */}
+        <div className="w-1/2 hidden md:lg:flex md:w-auto text-right md:lg:pt-4 ">
+        <a
+         href="/blog"
+          className="px-5  py-3 bg-pink-400 rounded-lg hover:scale-95 duration-300 transition text-white shadow-sm font-medium"
+        >
+           Learn More
+        </a>
       </div>
-      <img src="/startupideas.png" className="max-w-full md:w-3/5 lg:max-w-sm" alt="mascot" />
+      </div>
+      
     </div>
   );
 };
