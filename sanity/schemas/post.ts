@@ -9,12 +9,6 @@ export default defineType({
       name: 'title',
       title: 'Title',
       type: 'string',
-      description: "keep the title short!",
-    }),
-    defineField({
-      name: 'description',
-      title: 'Description',
-      type: 'string',
     }),
     defineField({
       name: 'slug',
@@ -42,7 +36,7 @@ export default defineType({
         {
           name: 'alt',
           type: 'string',
-          title: 'Alternative text',
+          title: 'Alternative Text',
         }
       ]
     }),
@@ -62,13 +56,6 @@ export default defineType({
       title: 'Body',
       type: 'blockContent',
     }),
-    defineField({ // Add the FAQ field here
-      name: 'faqs',
-      title: 'FAQs',
-      type: 'array',
-      of: [{ type: 'reference', to: { type: 'faq' } }],
-    }),
-  
   ],
 
   preview: {
