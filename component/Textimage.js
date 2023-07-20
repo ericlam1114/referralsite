@@ -27,7 +27,7 @@ const Textimage = () => {
             <p className="md:lg:pt-4">
             Permanent jewelry, typically bracelets or necklaces, are designed to be worn indefinitely, creating a unique bond between the wearer and the piece. These pieces often hold significant sentimental value, symbolizing unbreakable connections, personal commitments, or significant life events. Whether it's a representation of self-love or a gift to a loved one, permanent jewelry offers a unique, everlasting expression of love, friendship, and personal identity.
             </p>
-            <div className="w-1/2 hidden md:lg:flex md:w-auto text-right md:lg:pt-4 ">
+            <div className="w-1/2 md:lg:flex md:w-auto pt-8 md:lg:pt-4 ">
         <a
          href="/blog"
           className="px-5  py-3 bg-pink-400 rounded-lg hover:scale-95 duration-300 transition text-white shadow-sm font-medium"

@@ -26,7 +26,7 @@ const Textimageflip = () => {
                 <div className='g:py-8 md:text-left'>
                     <h2 className='text-4xl md:lg:text-4xl'>How Much is Permanent Jewelry?</h2>
                     <p className='pt-4'>The price of permanent jewelry varies widely, influenced by factors such as materials used, the intricacy of design, brand prestige, and artisanal craftsmanship. Prices can range from as low as $50 for simple, minimalist designs crafted from sterling silver to well over $10,000 for pieces made from high-quality gold, platinum, or encrusted with diamonds or other precious gemstones.</p>
-                    <div className="w-1/2 hidden md:lg:flex md:w-auto text-right md:lg:pt-4 ">
+                    <div className="w-1/2 md:lg:flex md:w-auto pt-8 md:lg:pt-4 ">
         <a
          href="/blog"
           className="px-5  py-3 bg-pink-400 rounded-lg hover:scale-95 duration-300 transition text-white shadow-sm font-medium"

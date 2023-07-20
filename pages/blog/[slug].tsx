@@ -107,7 +107,7 @@ const Post = ({ post }: PostType) => {
 
       {/* {Article} */}
       <Navbarblog></Navbarblog>
-      <div className="max-w-3xl mx-auto flex center mb-10 pt-0 md:lg:pt-24">
+      <div className="max-w-3xl mx-auto flex pt-24 center mb-10  md:lg:pt-24">
         <article className="w-full mx-auto p-5 ">
           <h1 className="font-titleFont font-medium text-4xl text-pink-500 border-b-[1px] border-b-black mt-10 mb-3">
             {post.title}
