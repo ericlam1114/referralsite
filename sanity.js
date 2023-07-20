@@ -1,13 +1,9 @@
 import { createClient } from "next-sanity";
 import createImageUrlBuilder from "@sanity/image-url";
 
-
-// const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
-const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || "uzas62mq";
-// const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET;
-const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET || "production";
-// const apiVersion = process.env.NEXT_PUBLIC_SANITY_API_VERSION;
-const apiVersion = process.env.NEXT_PUBLIC_SANITY_API_VERSION || "2021-10-21";
+const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
+const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET;
+const apiVersion = process.env.NEXT_PUBLIC_SANITY_API_VERSION;
 
 export const config = {
   projectId,
