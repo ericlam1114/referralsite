@@ -63,7 +63,7 @@ const Post = ({ post }: PostType) => {
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content={`https://explodingideas.co/blog/${post.slug.current}`}
+          content={`https://oliviaweld.com/blog/${post.slug.current}`}
         />
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.description} />
@@ -72,7 +72,7 @@ const Post = ({ post }: PostType) => {
         <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:url"
-          content={`https://explodingideas.co/blog/${post.slug.current}`}
+          content={`https://oliviaweld.com/blog/${post.slug.current}`}
         />
         <meta property="twitter:title" content={post.title} />
         <meta property="twitter:description" content={post.description} />
@@ -109,7 +109,7 @@ const Post = ({ post }: PostType) => {
       <Navbarblog></Navbarblog>
       <div className="max-w-3xl mx-auto flex center mb-10 pt-0 md:lg:pt-24">
         <article className="w-full mx-auto p-5 ">
-          <h1 className="font-titleFont font-medium text-4xl text-yellow-500 border-b-[1px] border-b-black mt-10 mb-3">
+          <h1 className="font-titleFont font-medium text-4xl text-pink-500 border-b-[1px] border-b-black mt-10 mb-3">
             {post.title}
           </h1>
 
@@ -124,12 +124,12 @@ const Post = ({ post }: PostType) => {
               <p className="font-bodyFont text-base">
                 by{" "}
                 <span className="font-bold text-secondaryColor">
-                  <a
+                  {/* <a
                     href="https://www.twitter.com/ericlamideas"
                     target="_blank"
-                  >
+                  > */}
                     {post.author.name}
-                  </a>
+                  {/* </a> */}
                 </span>{" "}
                 - Published {new Date(post.publishedAt).toLocaleDateString()}
               </p>

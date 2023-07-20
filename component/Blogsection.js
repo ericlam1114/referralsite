@@ -29,7 +29,7 @@ const BlogPage = () => {
     <div className="flex flex-col gap-5 mx-auto max-w-3xl lg:max-w-4xl">
       {posts.map((post, index) => (
         <Link key={index} href={`/blog/${post.slug.current}`} passHref>
-          <div className="flex flex-col sm:flex-row border border-gray-200 rounded-lg overflow-hidden items-center transform transition-all hover:shadow-md hover:border-amber-300 cursor-pointer">
+          <div className="flex flex-col sm:flex-row border border-gray-200 rounded-lg overflow-hidden items-center transform transition-all hover:shadow-md hover:border-pink-300 cursor-pointer">
             <img className="order-1 hidden md:lg:block sm:order-2 w-full sm:w-32 lg:w-6/12 object-contain" src={urlFor(post.mainImage).url()} alt={post.title} />
             <div className="order-2 sm:order-1 p-5 flex flex-col space-y-2">
               <div className="text-sm text-gray-500">{new Date(post.publishedAt).toLocaleDateString()}</div>

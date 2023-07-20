@@ -62,7 +62,7 @@ const BlogPage = () => {
           {otherPosts.map((post, index) => (
             post.slug && (
               <Link key={index} href={`/blog/${post.slug.current}`} passHref>
-                <div className="flex flex-col border border-gray-200 rounded-lg overflow-hidden transform transition-all hover:shadow-md hover:border-amber-300 cursor-pointer">
+                <div className="flex flex-col border border-gray-200 rounded-lg overflow-hidden transform transition-all hover:shadow-md hover:border-pink-300 cursor-pointer">
                   <div className="p-4 flex flex-col justify-between">
                     <h3 className="text-lg font-bold">{post.title}</h3>
                     <p className="text-gray-700 pb-4 mt-2">{post.description}</p>

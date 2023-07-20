@@ -7,7 +7,7 @@ const Bloghero = () => {
     <>
       <div className="flex justify-center items-center pb-12 -mt-24 md:lg:pb-24 md:lg:pt-24  ">
         <div className=" p-8  space-y-4 ">
-          <h2 className=" text-2xl md:lg:text-3xl font-bold text-black sm:text-center">
+          <h2 className=" text-2xl md:lg:text-3xl font-bold text-black pt-32 md:lg:pt-0 sm:text-center">
           Exploring the Timeless Appeal of Permanent Jewelry
           </h2>
          

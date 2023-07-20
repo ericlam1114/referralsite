@@ -18,7 +18,7 @@ const Footer = () => {
         {/* <div>|</div> */}
         <Link href="/blog" className="underline">
           Blog 
-        </Link><div className="md:hidden">|</div>
+        </Link>
        
       </div>
       {/* <div className="text-sm pt-2">
