@@ -4,7 +4,7 @@ import { RiInstagramFill } from "react-icons/ri";
 import axios from "axios";
 import { useRouter } from "next/router";
 import Header from "../component/Header.js";
-import sparkloop from "sparkloop";
+
 
 const Hero = () => {
   const [formData, setFormData] = useState({});

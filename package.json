@@ -37,7 +37,6 @@
     "react-icons": "^4.8.0",
     "react-portable-text": "^0.6.0",
     "sanity": "^3.14.3",
-    "sparkloop": "^1.0.5",
     "styled-components": "5.2",
     "tailwindcss-animatecss": "^3.0.4"
   },

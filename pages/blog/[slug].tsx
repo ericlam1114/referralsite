@@ -120,7 +120,7 @@ const Post = ({ post }: PostType) => {
                 className="rounded-full w-12 h-12 object-cover bg-red-400"
                 src={urlFor(post.author.image).url()}
                 alt="authorImg"
-              />
+                />
               <p className="font-bodyFont text-base">
                 by{" "}
                 <span className="font-bold text-secondaryColor">
@@ -135,6 +135,17 @@ const Post = ({ post }: PostType) => {
               </p>
             </div>
           </h2>
+          
+
+<div className="w-full">
+    <Image
+      src={urlFor(post.mainImage).url()!}
+      alt="coverImage"
+      layout="responsive" // This makes image responsive
+      width={1200} // Put your desired max width here
+      height={400} // Put your desired max height here
+    />
+</div>
 
           <div className="mt-10 ">
             <PortableText
@@ -232,7 +243,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     },
     "comments":*[_type == "comment" && post._ref == ^._id && approved == true],
     description,
-    mainImage,
+    mainImage{asset->{_id, url}},
     slug,
     body[]{
       ...,
