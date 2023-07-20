@@ -3,7 +3,7 @@
 import {visionTool} from '@sanity/vision'
 import {defineConfig} from 'sanity'
 import {deskTool} from 'sanity/desk'
-import schema from './sanity/schema'
+import schema from './oliviaweld/sanity/schema'
 
 
 const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || "uzas62mq";

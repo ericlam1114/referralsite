@@ -3,13 +3,13 @@ import { useState } from "react";
 
 import Header from "../../component/Header";
 import Head from "next/head";
-import Footer from "../../component/Footertwo";
+import Footer from "../../component/Footer";
 import { GetStaticProps } from "next";
 import { sanityClient, urlFor } from "../../sanity";
 import { Post } from "../../typings";
 import PortableText from "react-portable-text";
 import { useForm, SubmitHandler } from "react-hook-form";
-import Navbarblog from "../../component/Navbarblog";
+import Navbarblog from "../../component/Navbar";
 import Image from "next/image";
 import BlockImage from "../../component/Blockimage";
 
@@ -176,7 +176,7 @@ const Post = ({ post }: PostType) => {
             <p>{faq.answer}</p>
           </div>
         ))} */}
-      <div className="max-w-4xl mx-auto">
+      {/* <div className="max-w-4xl mx-auto">
         <iframe
           src="https://embeds.beehiiv.com/ca8d336e-c1b8-45ff-a785-6601b20540a9"
           data-test-id="beehiiv-embed"
@@ -191,7 +191,7 @@ const Post = ({ post }: PostType) => {
             backgroundColor: "transparent",
           }}
         />
-      </div>
+      </div> */}
       <Footer />
     </div>
   );
