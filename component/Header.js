@@ -8,7 +8,7 @@ function Header() {
     <div>
       <Head>
    
-<title>Energy Credit Transfer Marketplace - Inflation Reduction Act</title>
+<title>Commercial Energy Credit Transfer Marketplace - Inflation Reduction Act</title>
 <meta name="title" content="Energy Credit Transfer Marketplace"/>
 <meta name="description" content="Join our private marketplace to buy or sell your commercial energy tax credits."/>
 
