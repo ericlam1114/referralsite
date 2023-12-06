@@ -53,12 +53,11 @@ export default function Example() {
                 />
               </svg>
             </div>
-            <h2 className="text-md pb-2  tracking-tight text-black"
-            id="target-section">
+            <h2 className="text-md pb-2  tracking-tight text-black">
               Entry Application
             </h2>
             <h3
-              
+              id="target-section"
               className="text-3xl font-bold tracking-tight text-gray-900"
             >
               Apply Here!
@@ -106,30 +105,33 @@ export default function Example() {
           </div>
         </div>
         <form
-          action="#"
+          action="https://api.web3forms.com/submit"
           method="POST"
           className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48"
         >
+          <input type="hidden" name="access_key" value="08caa7c2-3208-49d4-b738-b96e5de257da"></input>
           <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               <div>
+
                 <label
                   htmlFor="first-name"
                   className="block text-sm font-semibold leading-6 text-gray-900"
                 >
-                  First name
+                  Full name
                 </label>
                 <div className="mt-2.5">
                   <input
                     type="text"
-                    name="first-name"
-                    id="first-name"
+                    name="name"
+                    id="name"
                     autoComplete="given-name"
+                    required
                     className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
-              <div>
+              {/* <div>
                 <label
                   htmlFor="last-name"
                   className="block text-sm font-semibold leading-6 text-gray-900"
@@ -145,10 +147,13 @@ export default function Example() {
                     className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
-              </div>
+              </div> */}
               <div className="sm:col-span-2">
                 <label
                   htmlFor="email"
+                  type="email"
+                  name="email"
+                  required
                   className="block text-sm font-semibold leading-6 text-gray-900"
                 >
                   Email
@@ -191,6 +196,7 @@ export default function Example() {
                   <textarea
                     name="message"
                     id="message"
+                    required
                     rows={4}
                     className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                     defaultValue={""}
