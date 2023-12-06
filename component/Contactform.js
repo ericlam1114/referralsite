@@ -53,11 +53,12 @@ export default function Example() {
                 />
               </svg>
             </div>
-            <h2 className="text-md pb-2  tracking-tight text-black">
+            <h2 className="text-md pb-2  tracking-tight text-black"
+            id="target-section">
               Entry Application
             </h2>
             <h3
-              id="target-section"
+              
               className="text-3xl font-bold tracking-tight text-gray-900"
             >
               Apply Here!

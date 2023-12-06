@@ -3,10 +3,10 @@ import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'About', href: '#target-about' },
+  { name: 'About', href: 'https://www.energycredittransfer.com/#target-about' },
   // { name: '', href: '#' },
   { name: 'Resources', href: '/blog' },
-  { name: 'Contact', href: '#target-section' },
+  { name: 'Contact', href: 'https://www.energycredittransfer.com/#target-section' },
 ]
 
 export default function Example() {
@@ -33,7 +33,7 @@ export default function Example() {
             Log in
           </a>
           <a
-            href="#target-section"
+            href="https://www.energycredittransfer.com/#target-section"
             className="rounded-md bg-black px-3  py-2 text-sm font-semibold text-white shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             Sign up

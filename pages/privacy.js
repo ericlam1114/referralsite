@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Footer from "../component/Footertwo";
+import Footer from "../component/Footer";
 import { useRouter } from "next/router";
 import Navbar from "../component/Navbar";
 
@@ -11,7 +11,7 @@ export default function PrivacyPolicy() {
       <Navbar></Navbar>
       <div className="flex flex-col items-center justify-center min-h-screen py-2">
         <Head>
-          <title>Privacy Policy | Olivia Weld</title>
+          <title>Privacy Policy | Energy Credit Transfer</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
@@ -73,16 +73,16 @@ Like many sites, we use "cookies" to collect information. You can instruct your 
         </main>
 
         <Footer></Footer>
-        <footer className="flex items-center justify-center w-full h-24 ">
+        {/* <footer className="flex items-center justify-center w-full h-24 ">
           <a
             className="flex items-center justify-center"
             href="/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            ©2023 Olivia Weld
+            ©2023 Energy Credit Transfer
           </a>
-        </footer>
+        </footer> */}
       </div>
     </div>
   );
