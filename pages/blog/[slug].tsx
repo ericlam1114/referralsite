@@ -109,7 +109,7 @@ const Post = ({ post }: PostType) => {
       <Navbarblog></Navbarblog>
       <div className="max-w-3xl mx-auto flex pt-24 center mb-10  md:lg:pt-24">
         <article className="w-full mx-auto p-5 ">
-          <h1 className="font-titleFont font-medium text-4xl text-pink-500 border-b-[1px] border-b-black mt-10 mb-3">
+          <h1 className="font-titleFont font-medium text-4xl text-black border-b-[1px] border-b-black mt-10 mb-3">
             {post.title}
           </h1>
 
@@ -149,9 +149,9 @@ const Post = ({ post }: PostType) => {
 
           <div className="mt-10 ">
             <PortableText
-              dataset={process.env.NEXT_PUBLIC_SANITY_DATASET || "production"}
+              dataset={process.env.NEXT_PUBLIC_SANITY_DATASET || "solar"}
               projectId={
-                process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || "hox55ajl"
+                process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || "uzas62mq"
               }
               content={post.body}
               serializers={{
