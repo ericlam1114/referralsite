@@ -1,45 +1,33 @@
-import React, {useState} from "react";
-// import { useState } from "react";
-import { BsFacebook, BsYoutube, BsTwitter } from "react-icons/bs";
-import { RiInstagramFill } from "react-icons/ri";
-import axios from "axios";
-import Image from "next/image";
-// import Popup from '../components/Popup'
+const stats = [
+  { id: 1, name: 'Creators on the platform', value: '8,000+' },
+  { id: 2, name: 'Flat platform fee', value: '3%' },
+  { id: 3, name: 'Uptime guarantee', value: '99.9%' },
+  { id: 4, name: 'Paid out to creators', value: '$70M' },
+]
 
-const spreadsheetId = 'https://sheet.best/api/sheets/d72fe0c5-266c-42ae-90d2-a70757956234';
-
-
-const Textimageflip = () => {
-    const [popupVisible, setPopupVisible] = useState(false);
-
-    const togglePopup = () => {
-      setPopupVisible(!popupVisible);
-    };
- 
+export default function Example() {
   return (
-    <div className="relative px-8">
-        <div className="flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24 items-center">
-            <div className="md:w-6/12 flex-shrink-0 relative">
-                <Image width={500} height={500} alt="sleeping" src='/bracelet.png' className="rounded-lg object-cover object-center"></Image>
-            </div>
-            <div className='md:w-6/12 mt-16 md:mt-0 md:mr-12 lg:mr-16 md:order-second'>
-                <div className='g:py-8 md:text-left'>
-                    <h2 className='text-4xl md:lg:text-4xl'>How Much is Permanent Jewelry?</h2>
-                    <p className='pt-4'>The price of permanent jewelry varies widely, influenced by factors such as materials used, the intricacy of design, brand prestige, and artisanal craftsmanship. Prices can range from as low as $50 for simple, minimalist designs crafted from sterling silver to well over $10,000 for pieces made from high-quality gold, platinum, or encrusted with diamonds or other precious gemstones.</p>
-                    <div className="w-1/2 md:lg:flex md:w-auto pt-8 md:lg:pt-4 ">
-        <a
-         href="/blog"
-          className="px-5  py-3 bg-pink-400 rounded-lg hover:scale-95 duration-300 transition text-white shadow-sm font-medium"
-        >
-           Learn More
-        </a>
-      </div>
-                </div>
-            </div>
+    <div className="bg-white py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl lg:max-w-none">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Trusted by creators worldwide
+            </h2>
+            <p className="mt-4 text-lg leading-8 text-gray-600">
+              Lorem ipsum dolor sit amet consect adipisicing possimus.
+            </p>
+          </div>
+          <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
+            {stats.map((stat) => (
+              <div key={stat.id} className="flex flex-col bg-gray-400/5 p-8">
+                <dt className="text-sm font-semibold leading-6 text-gray-600">{stat.name}</dt>
+                <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900">{stat.value}</dd>
+              </div>
+            ))}
+          </dl>
         </div>
-        {/* <Popup visible={popupVisible} onClose={togglePopup} /> */}
+      </div>
     </div>
-  );
-};
-
-export default Textimageflip;
+  )
+}

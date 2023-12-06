@@ -1,46 +1,80 @@
-import React, { useState, useEffect } from "react";
-import { BsFacebook, BsYoutube, BsTwitter } from "react-icons/bs";
-import { RiInstagramFill } from "react-icons/ri";
-import axios from "axios";
-import { useRouter } from "next/router";
-import Header from "../component/Header.js";
+import { useState } from "react";
+import { Dialog } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
+const navigation = [
+  { name: "Product", href: "#" },
+  { name: "Features", href: "#" },
+  { name: "Marketplace", href: "#" },
+  { name: "Company", href: "#" },
+];
 
-const Hero = () => {
-  const [formData, setFormData] = useState({});
-  const [email, setEmail] = useState("");
-  const [error, setError] = useState("");
-
-  const opts = {
-    scan_forms: false,
-  };
-
-  const router = useRouter();
-
-  
+export default function Example() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="relative w-full mt-36  h-screen">
-      <div className="absolute inset-0 bg-center bg-cover hue-rotate-45  filter  md:lg:blur-none" style={{backgroundImage: "url('/chain.png')"}}></div>
-      <div className="relative flex  flex-col items-center px-2 md:lg:px-0 justify-center h-full text-center ">
-        <h1 className="text-5xl font-bold pb-8 md:lg:pb-4  text-sky-950 md:lg:rounded-lg sm:w-full md:w-3/6 lg:w-3/6 md:lg:text-6xl">
-          Permanent Jewelry{" "}
-        </h1>
-        <p className="text-base  text-sky-950  md:lg:w-2/5 ">
-          Start your own permanent jewelry business with ease - we provide the tools, supplies, and step-by-step guides you need. Dive into the sparkling world of jewelry making today!
-        </p>
-        <div className="pt-8 md:lg:flex md:w-auto text-right md:lg:pt-4 ">
-        <a
-         href="/blog"
-          className="px-5  py-3 bg-pink-400 rounded-lg hover:scale-95 duration-300 transition text-white shadow-sm font-medium"
+    <div className="bg-gray-900">
+      <div className="relative isolate overflow-hidden pt-14">
+        <img
+          src="/solar.png"
+          alt=""
+          className="absolute inset-0 -z-10 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black opacity-40 -z-10"></div> {/* Overlay added here */}
+        <div
+          className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+          aria-hidden="true"
         >
-           Learn More
-        </a>
+          <div
+            className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+            style={{
+              clipPath:
+              "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+            }}
+          />
+              
+        </div>
+        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+          <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+            {/* <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
+              Announcing our next round of funding.{" "}
+              <a href="#" className="font-semibold text-white">
+                <span className="absolute inset-0" aria-hidden="true" />
+                Read more <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div> */}
+          </div>
+          <div className="text-center">
+            <h1 className="text-4xl  font-bold tracking-tight text-white sm:text-7xl">
+            Energy Credit Transfer Marketplace
+            </h1>
+            <p className="mt-6 text-lg leading-8 text-white">
+            Join our private marketplace to buy or sell your commercial energy tax credits.
+            </p>
+            <div className="mt-10 flex items-center justify-center gap-x-6">
+              <a
+                href="#target-section"
+                className="rounded-sm bg-white px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-gray-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+              >
+              APPLY TO JOIN
+              </a>
+             
+            </div>
+          </div>
+        </div>
+        <div
+          className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+          aria-hidden="true"
+        >
+          <div
+            className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+            style={{
+              clipPath:
+                "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+            }}
+          />
+        </div>
       </div>
-      </div>
-      
     </div>
   );
-};
-
-export default Hero;
+}

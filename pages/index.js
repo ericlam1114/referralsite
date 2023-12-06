@@ -8,7 +8,7 @@ import Link from "next/link";
 import Navbar from "../component/Navbar";
 import Textimage from '../component/Textimage'
 import Textimageflip from "../component/Textimageflip";
-import About from "../component/About";
+import About from "../component/Contactform";
 // import Sectionone from "../component/Sectionone";
 // import Sectiontwo from "../component/Sectiontwo";
 // import Testimonials from "../component/Testimonials";
@@ -16,7 +16,7 @@ import About from "../component/About";
 
 export default function Home() {
   return (
-    <div className="bg-gradient-to-r from-pink-100 to-white">
+    <div className="">
       <Link href="/">
         {" "}
         <Header></Header>

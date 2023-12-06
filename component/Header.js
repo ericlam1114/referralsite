@@ -8,23 +8,23 @@ function Header() {
     <div>
       <Head>
    
-<title>Permanent Jewelry Kit</title>
-<meta name="title" content="Permanent Jewelry Kit"/>
-<meta name="description" content="Join 6,000+ elite entrepreneurs getting curated startup ideas in million dollar niches."/>
+<title>Energy Credit Transfer Marketplace - Inflation Reduction Act</title>
+<meta name="title" content="Energy Credit Transfer Marketplace"/>
+<meta name="description" content="Join our private marketplace to buy or sell your commercial energy tax credits."/>
 
 
 <meta property="og:type" content="website"/>
-<meta property="og:url" content="https://www.explodingideas.co/"/>
-<meta property="og:title" content="Permanent Jewelry Kit"/>
-<meta property="og:description" content="Join 6,000+ elite entrepreneurs getting curated startup ideas in million dollar niches."/>
-<meta property="og:image" content="https://i.postimg.cc/bNrMHZLh/Exploding-Ideas-copy.png"/>
+<meta property="og:url" content="https://www.energycredittransfer.com/"/>
+<meta property="og:title" content="Energy Credit Transfer Marketplace"/>
+<meta property="og:description" content="Join our private marketplace to buy or sell your commercial energy tax credits."/>
+{/* <meta property="og:image" content="https://i.postimg.cc/bNrMHZLh/Exploding-Ideas-copy.png"/> */}
 
 
 <meta property="twitter:card" content="summary_large_image"/>
-<meta property="twitter:url" content="https://www.explodingideas.co/"/>
-<meta property="twitter:title" content="Permanent Jewelry Kit"/>
-<meta property="twitter:description" content="Join 6,000+ elite entrepreneurs getting curated startup ideas in million dollar niches."/>
-<meta property="twitter:image" content="https://i.postimg.cc/bNrMHZLh/Exploding-Ideas-copy.png"/>
+<meta property="twitter:url" content="https://www.energycredittransfer.com/"/>
+<meta property="twitter:title" content="Energy Credit Transfer Marketplace"/>
+<meta property="twitter:description" content="Join our private marketplace to buy or sell your commercial energy tax credits."/>
+{/* <meta property="twitter:image" content="https://i.postimg.cc/bNrMHZLh/Exploding-Ideas-copy.png"/> */}
 
 
   

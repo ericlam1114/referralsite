@@ -1,46 +1,59 @@
-import React, { useState } from "react";
-import Image from "next/image";
+import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
 
+const features = [
+  {
+    name: 'Push to deploy.',
+    description:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+    icon: CloudArrowUpIcon,
+  },
+  {
+    name: 'SSL certificates.',
+    description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
+    icon: LockClosedIcon,
+  },
+  {
+    name: 'Database backups.',
+    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    icon: ServerIcon,
+  },
+]
 
-const Textimage = () => {
-  const [popupVisible, setPopupVisible] = useState(false);
-
-  const togglePopup = () => {
-    setPopupVisible(!popupVisible);
-  };
-
+export default function Example() {
   return (
-    <div className="relative px-8 -mt-8 md:pt-0 lg:pt-0">
-      <div className="flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-24 md:py-32 items-center">
-        <div className="md:w-6/12 flex-shrink-0 relative">
-          <Image
-            width={500}
-            height={500}
-            alt="permanent jewelry bracelet"
-            src="/leftimage.png"
-            className="rounded-lg object-cover object-center"
-          ></Image>
-        </div>
-        <div className="md:w-6/12 mt-16 md:mt-0 md:mr-12 lg:mr-16 md:order-first">
-          <div className="g:py-8 md:text-left">
-            <h2 className="text-4xl md:lg:text-4xl">What is Permanent Jewelry?</h2>
-            <p className="md:lg:pt-4">
-            Permanent jewelry, typically bracelets or necklaces, are designed to be worn indefinitely, creating a unique bond between the wearer and the piece. These pieces often hold significant sentimental value, symbolizing unbreakable connections, personal commitments, or significant life events. Whether it's a representation of self-love or a gift to a loved one, permanent jewelry offers a unique, everlasting expression of love, friendship, and personal identity.
-            </p>
-            <div className="w-1/2 md:lg:flex md:w-auto pt-8 md:lg:pt-4 ">
-        <a
-         href="/blog"
-          className="px-5  py-3 bg-pink-400 rounded-lg hover:scale-95 duration-300 transition text-white shadow-sm font-medium"
-        >
-           Learn More
-        </a>
-      </div>
+    <div className="overflow-hidden  py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+          <div className="lg:pr-8 lg:pt-4">
+            <div className="lg:max-w-lg">
+              <h2 className="text-base font-semibold leading-7 text-black">Deploy faster</h2>
+              <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">A better workflow</p>
+              <p className="mt-6 text-lg leading-8 text-black">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
+                iste dolor cupiditate blanditiis ratione.
+              </p>
+              <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-black lg:max-w-none">
+                {features.map((feature) => (
+                  <div key={feature.name} className="relative pl-9">
+                    <dt className="inline font-semibold text-black">
+                      <feature.icon className="absolute left-1 top-1 h-5 w-5 text-black" aria-hidden="true" />
+                      {feature.name}
+                    </dt>{' '}
+                    <dd className="inline">{feature.description}</dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
           </div>
+          <img
+            src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
+            alt="Product screenshot"
+            className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-white/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+            width={2432}
+            height={1442}
+          />
         </div>
-        {/* <Popup visible={popupVisible} onClose={togglePopup} /> */}
       </div>
     </div>
-  );
-};
-
-export default Textimage;
+  )
+}
