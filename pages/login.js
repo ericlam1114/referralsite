@@ -1,7 +1,7 @@
 import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
 import React, { useState } from 'react';
-import ForgotPassword from '../component/forgotpassword'
+import ForgotPassword from '../component/forgotpassword';
 
 /*
   This example requires some changes to your config:
