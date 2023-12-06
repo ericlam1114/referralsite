@@ -1,8 +1,8 @@
 const stats = [
-  { id: 1, name: 'Creators on the platform', value: '8,000+' },
-  { id: 2, name: 'Flat platform fee', value: '3%' },
-  { id: 3, name: 'Uptime guarantee', value: '99.9%' },
-  { id: 4, name: 'Paid out to creators', value: '$70M' },
+  { id: 1, name: 'Of commercial buildings use solar', value: '3.5%' },
+  { id: 2, name: 'Growth over last decade', value: '12x' },
+  { id: 3, name: 'Tax on energy sales', value: '0%' },
+  { id: 4, name: 'Marketplace fee', value: '0%' },
 ]
 
 export default function Example() {
@@ -12,10 +12,10 @@ export default function Example() {
         <div className="mx-auto max-w-2xl lg:max-w-none">
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Trusted by creators worldwide
+              Leverage the Inflation Reduction Act
             </h2>
             <p className="mt-4 text-lg leading-8 text-gray-600">
-              Lorem ipsum dolor sit amet consect adipisicing possimus.
+            It's your right to buy or sell your credits to get a financial edge in your business
             </p>
           </div>
           <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">

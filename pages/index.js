@@ -8,7 +8,9 @@ import Link from "next/link";
 import Navbar from "../component/Navbar";
 import Textimage from '../component/Textimage'
 import Textimageflip from "../component/Textimageflip";
+import Textimagealt from "../component/Textimagealt";
 import About from "../component/Contactform";
+import Faq from "../component/Faq";
 // import Sectionone from "../component/Sectionone";
 // import Sectiontwo from "../component/Sectiontwo";
 // import Testimonials from "../component/Testimonials";
@@ -26,7 +28,9 @@ export default function Home() {
       <Hero />
       <Textimage></Textimage>
       <Textimageflip></Textimageflip>
+      <Textimagealt></Textimagealt>
       <About></About>
+      <Faq></Faq>
 {/* <Sectionone></Sectionone>
 <Sectiontwo></Sectiontwo>
 <Testimonials></Testimonials>
