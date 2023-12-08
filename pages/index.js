@@ -10,6 +10,8 @@ import Textimage from '../component/Textimage'
 import Textimageflip from "../component/Textimageflip";
 import Textimagealt from "../component/Textimagealt";
 import About from "../component/Contactform";
+import Contentsection from "../component/Contentsection";
+import Contentsectiontoo from "../component/Contentsectiontoo";
 import Faq from "../component/Faq";
 // import Sectionone from "../component/Sectionone";
 // import Sectiontwo from "../component/Sectiontwo";
@@ -30,6 +32,8 @@ export default function Home() {
       <Textimageflip></Textimageflip>
       <Textimagealt></Textimagealt>
       <About></About>
+      <Contentsection></Contentsection>
+      <Contentsectiontoo></Contentsectiontoo>
       <Faq></Faq>
 {/* <Sectionone></Sectionone>
 <Sectiontwo></Sectiontwo>
