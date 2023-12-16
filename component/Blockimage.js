@@ -5,7 +5,7 @@ const BlockImage = ({node}) => {
   const imageUrl = urlFor(node.mainImage).url();
   const assetUrl = urlFor(node.asset).url();
   console.log(imageUrl, "hehellooo");
-  console.log(assetUrl, "hehellooo");
+  console.log(assetUrl, "hehelloooo");
 
   return (
     <figure>
