@@ -9,6 +9,8 @@ function urlFor(source) {
   return builder.image(source);
 }
 
+const POSTS_PER_PAGE = 10; // Adjust the number of posts per page
+
 const calculatorApps = [
   {
     name: "Solar Loan Calculator",
@@ -24,10 +26,17 @@ const calculatorApps = [
 
 const BlogPage = () => {
   const [posts, setPosts] = useState([]);
+  const [currentPage, setCurrentPage] = useState(0);
+  const [totalPages, setTotalPages] = useState(0);
 
   useEffect(() => {
+    // Fetch total number of posts to calculate total pages
+    sanityClient.fetch(`count(*[_type == "post"])`).then((total) => {
+      setTotalPages(Math.ceil(total / POSTS_PER_PAGE));
+    });
+
     sanityClient
-      .fetch(`*[_type == "post"] | order(publishedAt desc)[0..9] {
+      .fetch(`*[_type == "post"] | order(publishedAt desc)[${currentPage * POSTS_PER_PAGE}..${(currentPage + 1) * POSTS_PER_PAGE - 1}] {
         title,
         slug,
         description,
@@ -36,7 +45,16 @@ const BlogPage = () => {
       }`)
       .then((data) => setPosts(data))
       .catch(console.error);
-  }, []);
+  }, [currentPage]);
+
+  const goToNextPage = () => {
+    setCurrentPage((prev) => (prev + 1 < totalPages ? prev + 1 : prev));
+  };
+
+  const goToPreviousPage = () => {
+    setCurrentPage((prev) => (prev - 1 >= 0 ? prev - 1 : prev));
+  };
+
 
   return (
     <div className="flex flex-col gap-5 mx-auto max-w-3xl lg:max-w-4xl">
@@ -50,9 +68,36 @@ const BlogPage = () => {
               <div className="text-gray-700 pb-4">{post.description}</div>
               <button className="mt-auto text-white bg-black px-4 py-2 rounded self-start">Read More</button>
             </div>
+            
           </div>
+          
         </Link>
-      ))}
+        
+      ))}  <div className="flex justify-between">
+      <button 
+        onClick={goToPreviousPage} 
+        disabled={currentPage === 0}
+        className={`px-4 py-2 text-white font-semibold rounded-lg transition duration-300 ease-in-out ${
+          currentPage === 0 
+            ? 'bg-gray-400 cursor-not-allowed' 
+            : 'bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300'
+        }`}
+      >
+        Previous
+      </button>
+      <button 
+        onClick={goToNextPage} 
+        disabled={currentPage === totalPages - 1}
+        className={`px-4 py-2 text-white font-semibold rounded-lg transition duration-300 ease-in-out ${
+          currentPage === totalPages - 1 
+            ? 'bg-gray-400 cursor-not-allowed' 
+            : 'bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300'
+        }`}
+      >
+        Next
+      </button>
+    </div>
+    
   <div className="flex flex-col gap-5">
         {calculatorApps.map((app, index) => (
           <Link key={index} href={app.link} passHref>
