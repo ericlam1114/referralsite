@@ -8,7 +8,7 @@ try {
 }
 
 module.exports = {
-  siteUrl: process.env.SITE_URL || 'https://energycredittransfer.com',
+  siteUrl: process.env.SITE_URL || 'https://www.energycredittransfer.com',
   generateRobotsTxt: true,
   additionalPaths: async () => blogSlugs.map(slug => ({ loc: slug })),
 };
