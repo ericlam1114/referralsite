@@ -18,7 +18,7 @@ export default function Example() {
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Energy Credit Transfter</span>
-            <img className="h-12 md:lg:h-20 w-auto" src="/startreferral.png" alt="logo" />
+            <img className="h-10 md:lg:h-20 w-auto" src="/startreferral.png" alt="logo" />
           </a>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
