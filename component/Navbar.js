@@ -28,8 +28,8 @@ export default function Example() {
             </a>
           ))}
         </div>
-        <div className="flex flex-1 items-center justify-end gap-x-6">
-          <a href="/login" className=" block text-xs md:lg:text-sm lg:font-semibold lg:leading-6 lg:text-gray-900">
+        <div className="flex flex-1 min-w-max md:lg:min-w-max items-center justify-end gap-x-6">
+          <a href="/login" className=" block text-xs  md:lg:text-sm lg:font-semibold lg:leading-6 lg:text-gray-900">
             Log in
           </a>
           <a
