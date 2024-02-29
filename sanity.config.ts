@@ -7,7 +7,7 @@ import schema from './oliviaweld/sanity/schema'
 
 
 // const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
-const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || "uzas62mq";
+const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || "8s7jl3w9";
 // const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET;
 const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET || "production";
 // const apiVersion = process.env.NEXT_PUBLIC_SANITY_API_VERSION;

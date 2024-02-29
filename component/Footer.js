@@ -1,7 +1,7 @@
 const navigation = {
   main: [
     { name: 'Privacy Policy', href: '/privacy' },
-    { name: 'Contact Us', href: 'https://www.energycredittransfer.com/#target-section' },
+    // { name: 'Contact Us', href: 'https://www.energycredittransfer.com/#target-section' },
     // { name: 'Jobs', href: '#' },
     // { name: 'Press', href: '#' },
     // { name: 'Accessibility', href: '#' },
@@ -94,7 +94,7 @@ export default function Example() {
           ))}
         </div> */}
         <p className="mt-10 text-center text-xs leading-5 text-gray-500">
-          &copy; 2023 EnergyCreditTransfer.com. All rights reserved.
+          &copy; 2023 StartReferral.com. All rights reserved.
         </p>
       </div>
     </footer>

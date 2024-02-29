@@ -28,13 +28,13 @@ export default function Home() {
       <Navbar></Navbar>
       <GoogleAnalytics trackPageViews gaMeasurementId="G-LJ6YRN6FD6" />
       <Hero />
-      <Textimage></Textimage>
+      {/* <Textimage></Textimage>
       <Textimageflip></Textimageflip>
       <Textimagealt></Textimagealt>
       <About></About>
       <Contentsection></Contentsection>
       <Contentsectiontoo></Contentsectiontoo>
-      <Faq></Faq>
+      <Faq></Faq> */}
 {/* <Sectionone></Sectionone>
 <Sectiontwo></Sectiontwo>
 <Testimonials></Testimonials>

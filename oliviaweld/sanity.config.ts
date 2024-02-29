@@ -11,7 +11,7 @@ export default defineConfig({
   title: 'explodingideas-landingblog',
 
   // use the environment variable directly here
-  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'uzas62mq',
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || '8s7jl3w9',
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production',
 
   plugins: [deskTool(), visionTool()],

@@ -3,10 +3,10 @@ import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'About', href: 'https://www.energycredittransfer.com/#target-about' },
+  // { name: 'About', href: 'https://www.energycredittransfer.com/#target-about' },
   // { name: '', href: '#' },
-  { name: 'Resources', href: '/blog' },
-  { name: 'Contact', href: 'https://www.energycredittransfer.com/#target-section' },
+  // { name: 'Resources', href: '/blog' },
+  // { name: 'Contact', href: 'https://www.energycredittransfer.com/#target-section' },
 ]
 
 export default function Example() {
@@ -18,7 +18,7 @@ export default function Example() {
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Energy Credit Transfter</span>
-            <img className="h-10 w-auto" src="/ectlogo.png" alt="logo" />
+            <img className="h-20 w-auto" src="/startreferral.png" alt="logo" />
           </a>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
@@ -33,8 +33,8 @@ export default function Example() {
             Log in
           </a>
           <a
-            href="https://www.energycredittransfer.com/#target-section"
-            className="rounded-md bg-black px-3  py-2 text-sm font-semibold text-white shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            href="/signup"
+            className="rounded-md bg-red-600 px-3  py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             Sign up
           </a>
